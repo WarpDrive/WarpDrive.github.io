@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>test</title>
+    <title>Dual</title>
 </head>
 <body>
-    <style>
-        @import url(Cesium/Widgets/widgets.css);
-    </style>
-    <div id="cesiumContainer" class="fullSize"></div>
-    <script type="text/javascript" src="./Cesium/Cesium.js"></script>
-    <script type="text/javascript" src="./PI_Manager.js"></script>
+<style>
+	@import url(../Cesium/Widgets/widgets.css);
+</style>
+<div id="cesiumContainer" class="fullSize"></div>
+<div id="mybar"></div>
+<script type="text/javascript" src="../Cesium/Cesium.js"></script>
+<script type="text/javascript" src="../Hyper/PI_Manager.js"></script>
 <script type="text/javascript">
 	viewer = new Cesium.Viewer('cesiumContainer');
 	Hyper.scriptLoader.callBack = function()
