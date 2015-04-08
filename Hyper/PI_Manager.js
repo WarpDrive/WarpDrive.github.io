@@ -31,8 +31,7 @@ var Hyper = function(){};	//Umbrella object for core modules
 //scriptLoader object
 Hyper.scriptLoader = function(){};
 Hyper.scriptLoader.scriptCounter=0;			//only used when initializing
-Hyper.scriptLoader.baseURL="./";
-//scriptLoader.baseURL="http://hyperscripts.atspace.tv/";
+Hyper.scriptLoader.baseURL="../";
 
 Hyper.scriptLoader.loadScript = function(url, callback)
 {
