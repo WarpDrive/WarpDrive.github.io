@@ -1,9 +1,9 @@
 
 /* HyperSonic's Cesium 3DMouse plugin (dependencies: PI_manager.js, PI_common.js, PI_math.js)
 scheme is a movement type, there are currently 4 types: 'sixDofTrue', 'sixDofCurved', 'fiveDof', 'fiveDofCamUp'
-Hyper.SpaceNav.spaceCon.push('sixDofTrue','fiveDof');
+Hyper.SpaceNav.spaceCon.push('sixDofTrue','fiveDof'); //sets 1st control to 6DOF and 2nd controller to 5DOF
 */
-Hyper.SpaceNav = function(){};
+Hyper.SpaceNav = function(){};	//can remove function and just be a generic object as there's no constructor
 Hyper.SpaceNav.init = function(){};
 Hyper.SpaceNav.inertia5dof=[0,0,0,0,0,0];//x,y,z,Rx,Ry,Rz
 Hyper.SpaceNav.inertia6dof=[0,0,0,0,0,0];//x,y,z,Rx,Ry,Rz
@@ -23,6 +23,7 @@ Hyper.SpaceNav.getWishSpeed = function(mp,moveScale)
 		mp[5]*0.02*camera.frustum.fov
 	];
 	return wishspeed;
+	//mp[4] is roll in 6DOF and FOV in 5DOF
 }
 Hyper.SpaceNav.getResultSpeed = function(controller,wishspeed)
 {
